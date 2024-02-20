@@ -1,0 +1,51 @@
+@import "../../styles/partials/colors";
+@import "../../styles/partials/breakpoints";
+
+.__footer {
+  color: $textColor;
+  font-family: 'Roboto-Light';
+  display: flex;
+  flex-direction: row;
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15rem;
+    background:black;
+    z-index: 1;
+  }
+
+  &--sankofa {
+    
+    flex: 1;
+    padding: 0rem 0rem 0rem 4rem;
+    z-index: 10;
+  }
+
+  &--business {
+    flex: 1;
+  }
+  &--logo{
+    flex: 1;
+    margin-top: 4rem;
+  }
+  &--icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: -4rem;
+
+    img{
+      width: 2rem;
+      margin-right: 1rem;
+      
+    }
+
+  }
+
+}
+
+
+.__footer > *{
+    z-index: 100;
+  }

@@ -1,0 +1,139 @@
+/* media query for mobile */
+/* media query for tablet */
+/*media query for desktop */
+@font-face {
+  font-family: "Rubik Glitch Pop";
+  src: url("../../assets/fonts/RubikGlitchPop-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: light;
+}
+body.active-modal {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal {
+  top: 20%;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  z-index: 999;
+  overflow-y: scroll;
+  max-height: 40rem;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.modal-content {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.9px);
+  -webkit-backdrop-filter: blur(0.9px);
+  border: 1px solid rgba(255, 255, 255, 0.99);
+  width: 60rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 1px;
+  background-color: white;
+  color: orange;
+  font-size: 2.5rem;
+  border: none;
+}
+
+.explore--container {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.explore--container img {
+  width: 30rem;
+  height: auto;
+}
+.explore--container figure {
+  display: grid;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.explore--container figure > * {
+  grid-area: 1/1;
+  transition: 0.4s;
+}
+.explore--container figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0);
+  padding: 0.75rem;
+  background: var(--c, rgba(0, 0, 0, 0.6));
+  -webkit-clip-path: inset(0 var(--_i, 100%) 0 0);
+          clip-path: inset(0 var(--_i, 100%) 0 0);
+  -webkit-mask: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask-clip: text, padding-box;
+  margin: -1px;
+}
+.explore--container figure:hover figcaption {
+  --_i: 0%;
+  color: white;
+  z-index: 99999;
+}
+.explore--container figure:hover img {
+  transform: scale(1.2);
+}
+@supports not (-webkit-mask-clip: text) {
+  .explore--container figure figcaption {
+    -webkit-mask: none;
+    color: #fff;
+  }
+}
+
+.explore--caption {
+  color: white;
+}
+
+.explore--title {
+  font-family: "Roboto-Light";
+  text-align: center;
+}
+
+.modal--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 30rem;
+  overflow-y: scroll;
+}/*# sourceMappingURL=modal.css.map */
