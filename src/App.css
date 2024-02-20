@@ -1,0 +1,38 @@
+/* media query for mobile */
+/* media query for tablet */
+/*media query for desktop */
+@font-face {
+  font-family: "Rubik Glitch Pop";
+  src: url("../../assets/fonts/RubikGlitchPop-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: light;
+}
+.header {
+  display: flex;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  z-index: 99;
+}
+.header--logo {
+  flex: 1;
+  z-index: 999;
+}
+.header--logo img {
+  min-width: 5rem;
+  width: 5rem;
+}
+.header--title {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  font-family: "Rubik Glitch Pop";
+  font-size: 1.5rem;
+}/*# sourceMappingURL=App.css.map */

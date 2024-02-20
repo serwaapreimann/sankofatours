@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "Events",
+    "image": "../../src/images/events.jpeg"
+  },
+  {
+    "id": 2,
+    "category": "Festivals",
+    "image": "../../../sankofa/src/images/festivals.png "
+  },
+  {
+    "id": 3,
+    "category": "Safaris",
+    "image": "../images/safaris.jpg "
+  },
+  {
+    "id": 4,
+    "category": "Resorts",
+    "image": "../images/beaches.jpeg "
+  },
+  {
+    "id": 5,
+    "category": "Detty December",
+    "image": "https://drive.google.com/file/d/182qXvPkB_sRzMVsfmxuypofMLYdHD6pe/view?usp=sharing "
+  },
+  {
+    "id": 6,
+    "category": "Spirituality",
+    "image": "../images/spirituality.jpeg "
+  },
+  {
+    "id": 7,
+    "category": "Roots",
+    "image": "../images/roots.jpeg "
+  },
+  {
+    "id": 8,
+    "category": "Art & Music",
+    "image": "../images/arts-music.jpeg "
+  }
+]

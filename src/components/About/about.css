@@ -1,0 +1,59 @@
+/* media query for mobile */
+/* media query for tablet */
+/*media query for desktop */
+@font-face {
+  font-family: "Rubik Glitch Pop";
+  src: url("../../assets/fonts/RubikGlitchPop-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: light;
+}
+.about--sankofa {
+  display: flex;
+  height: 20rem;
+}
+.about--sankofa-1, .about--sankofa-2 {
+  flex: 1;
+  z-index: 1;
+  position: relative;
+  padding: 0rem 3rem;
+  margin-top: -1rem;
+  line-height: 3rem;
+  color: white;
+  width: 40%;
+  text-align: justify;
+  font-size: 22px;
+}
+.about--section {
+  background: url("../../images/african-seamless-color-pattern-free-vector.jpg");
+  margin-top: -3rem;
+  z-index: -1;
+  position: relative;
+}
+.about--section::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 27rem;
+  background: rgba(255, 255, 255, 0.13); /* Adjust the alpha (opacity) value to control the transparency of the glass effect */
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px); /* Adjust the blur radius for the glass effect */
+  z-index: 1;
+}
+
+.about--title {
+  margin-left: 3rem;
+  font-family: "Roboto-Light";
+  z-index: 3;
+  position: relative;
+  color: white;
+  padding-top: 1rem;
+  font-size: 3rem;
+}/*# sourceMappingURL=about.css.map */
