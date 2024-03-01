@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.scss";
-import "animate.css";
 export default function About() {
   return (
     <section className="about--section" id="about">

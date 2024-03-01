@@ -4,7 +4,7 @@
 .__button {
   --b: 3px;
   --s: 0.45em;
-  --color: orange;
+  --color: #ffa500;
   // z-index: 6;
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
   color: var(--color);
@@ -26,7 +26,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 2rem 0rem 0rem 44rem;
+  margin: 2rem 0rem 0rem 30rem;
 }
 
 .__button:hover,
@@ -47,15 +47,13 @@
   &-links {
     display: flex;
     flex-direction: row;
-    &:hover{
-      a{
+    &:hover {
+      a {
         transform: scale(1.5);
         opacity: 0.2;
         filter: blur(5px);
-  
       }
     }
-    
   }
 
   &-link {
@@ -65,7 +63,7 @@
 
     a {
       text-decoration: none;
-      font-family:  "Roboto-Light";
+      font-family: "Roboto-Light";
       color: black;
       display: block;
       position: relative;
@@ -74,7 +72,7 @@
       // text-transform: uppercase;
       transition: 0.5s;
 
-      &:hover{
+      &:hover {
         transform: scale(1);
         opacity: 1;
         filter: blur(0);
@@ -82,31 +80,154 @@
         color: white;
         font-weight: 700;
 
-        &::before{
-          transition:transform 0.5s;
-          transform-origin:left;
-          transform:scaleX(1);
+        &::before {
+          transition: transform 0.5s;
+          transform-origin: left;
+          transform: scaleX(1);
         }
       }
 
-      &:before{
-        content: '';
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        background:#f5118b;
-        transition:0.5s;
-        transform-origin:right;
-        transform:scaleX(0);
-        z-index:-1;
-}
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f5118b;
+        transition: 0.5s;
+        transform-origin: right;
+        transform: scaleX(0);
+        z-index: -1;
       }
     }
-
+  }
 }
 
+.rotate {
+  transition: transform 0.3s ease;
+  transform: rotate(90deg);
+}
 
+.header--add-to-cart {
+  width: 40px;
+  height: auto;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
 
+.navigation--icons {
+  display: flex;
+}
 
+.cart--wishlist{
+  position: relative;
+  top: 1rem;
+  img{
+    width: 5rem;
+    z-index: 1000;
+    
+  }
+  span{
+    background-color: #ffa500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: 60%;
+  padding: 3px 8px;
+  }
+}
+.cart--quantity {
+  background-color: #04a8ba;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 1.5rem;
+  left: 89.5%;
+  padding: 3px 8px;
+}
+
+.cart--card {
+  position: fixed;
+  top: 5.5rem;
+  left: calc(100% - 500px);
+  width: 500px;
+  z-index:999;
+  background-color: white;
+  height: auto;
+  box-shadow: #1c1f25;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+
+  h1 {
+    color: #f5118b;
+    font-family: "Roboto-Light";
+    margin: 0;
+    padding: 0 8rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    z-index:999;
+    text-align: center;
+  }
+}
+.cart--checkout {
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  div {
+    background-color: #ffa500;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index:999;
+  }
+  div:nth-child(2) {
+    background-color: #1c1f25;
+    color: #fff;
+    z-index:999;
+  }
+}
+
+.cart--checkout-main {
+  background-color: #f5118b;
+  position: absolute;
+  height: 70px;
+  bottom: -8.7rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0px 0px 20px 20px;
+  z-index:9999;
+  cursor: pointer;
+}
+
+.active .card {
+  left: calc(100% - 500px);
+  transform: translateX(-200px);
+  transition:transform 1s linear;
+  
+}
+
+.active .container {
+  transform: translateX(-200px);
+  transition:transform 1s linear;
+
+}

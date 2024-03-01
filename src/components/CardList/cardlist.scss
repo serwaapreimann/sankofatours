@@ -1,0 +1,35 @@
+
+
+.cart--list{
+    display: flex;
+    height: 40px;
+
+    &-name{
+        flex:5;
+    }
+    &-price{
+        flex: 1;
+    }
+    &-container{
+        background-color: whitesmoke;
+        margin-left: -2.5rem;
+        max-height: 3.5rem;
+        border-bottom: 0.1rem solid white;
+        padding: 1.75rem 0rem 0rem 0.8rem;
+        font-family: 'Roboto-Light';
+        font-size: 1.2rem;
+        transition:transform 0.3s ease ;
+        transform: translateY(0%);
+
+        &:hover{
+            background-color: #FFFAFA;
+        }
+        
+    }
+    &-delete{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+
