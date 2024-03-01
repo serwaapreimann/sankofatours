@@ -1,8 +1,5 @@
-import React from 'react';
 import './modal.scss';
 import Data from  '../../data/browse.json';
-import Image from '../../images/detty december.jpeg';
-import 'animate.css';
 
 
 
@@ -15,7 +12,7 @@ export default function Modal() {
           {Data.map((item) => (
             <div className='explore--container' key={item.id}>
               <figure className="explore--figure">
-                <img className='explore--image' src={Image} alt={item.category} />
+                <img className='explore--image' src={item.image} alt={item.category} />
                 <figcaption className='explore--caption'>{item.category}</figcaption>
               </figure>
             </div>

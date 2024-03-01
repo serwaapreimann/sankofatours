@@ -1,30 +1,45 @@
-
-.leaflet-container{
-    background-color: white !important;
-    color: black;
+.leaflet-container {
+  background-color: white !important;
+  color: black;
 }
 
-.map--title{
-    margin-left: 2rem;
-    font-family:  "Roboto-Light";
-    font-size: 3rem;
+*::selection {
+  background: var(--brand);
+  color: var(--background);
 }
 
-.map--header{
+*{
+  --brand: #e9177e;
+}
+
+.map--title {
+  margin-left: 2rem;
+  font-family: "Roboto-Light";
+  font-size: 3rem;
+}
+
+.map--header {
+  display: flex;
+  margin: 3rem 30rem 3rem 30rem;
+  font-family: "Roboto-Light";
+  text-transform: uppercase;
+  font-size: 2rem;
+
+  &-1 {
+    margin-right: 10rem;
+    margin-left: 3rem;
     display: flex;
-    margin: 3rem 30rem 3rem 30rem;
-    font-family: 'Roboto-Light';
-    text-transform: uppercase;
-    font-size: 2rem;
 
-    &-1{
-        margin-right: 10rem;
-        margin-left: 3rem;
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin: 1.5rem 1rem 0rem 0rem;
     }
-    &-2{
-        @extend .map--header-1
-    }
-    &-3{
-        @extend .map--header-2
-    }
+  }
+  &-2 {
+    @extend .map--header-1;
+  }
+  &-3 {
+    @extend .map--header-2;
+  }
 }
